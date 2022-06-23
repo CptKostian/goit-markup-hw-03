@@ -325,7 +325,6 @@ body {
 }
 
 .example-item {
-  border: 1px solid var(--border-example-color);
   width: calc((100% - 60px) / 3);
 }
 .example-item:not(:nth-child(3n)) {
@@ -334,6 +333,15 @@ body {
 .example-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
+.example-text {
+  padding: 20px 24px;
+  border: 1px solid var(--border-example-color);
+  border-top: none;
+}
+
+.example-photo {
+  display: block;
+}
 .example-name {
   font-weight: 700;
   font-size: 18px;
@@ -341,18 +349,12 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .example-type {
   font-size: 16px;
   line-height: 1.875;
 
-  margin-top: 0;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
+  margin: 0;
 }
