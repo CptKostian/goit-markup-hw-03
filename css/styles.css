@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -42,10 +36,6 @@ body {
 .section.whatwedo {
   padding-top: 0;
   padding-bottom: 94px;
-}
-.container-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .remove-useless {
@@ -124,6 +114,9 @@ body {
 
 .footer {
   background-color: var(--background-secondary-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -137,15 +130,19 @@ body {
 
   margin-top: 20px;
 }
-.location {
-  margin: 0;
-}
+
 .address-info {
   color: var(--address-info-color);
   text-decoration: none;
 
   margin-top: 9px;
   display: block;
+}
+
+.address-info:first-child {
+  margin: 0;
+
+  color: var(--background-primary-color);
 }
 
 .address-info:hover,
@@ -158,6 +155,8 @@ body {
 .hero {
   background-color: var(--background-secondary-color);
   text-align: center;
+
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -167,6 +166,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-primary-color);
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -230,6 +232,8 @@ body {
 
 .adventages-text {
   line-height: 1.71;
+
+  margin: 0;
 }
 
 .whatwedo-list {
@@ -265,21 +269,23 @@ body {
   text-align: center;
 }
 
+.ourteam-content {
+  padding: 30px 0;
+}
+
 .ourteam-name {
   font-weight: 500;
   font-size: inherit;
   color: var(--title-text-color);
 
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 10px;
 }
 .team-photo {
   display: block;
-  margin-bottom: 30px;
 }
 .ourteam-job {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
 }
 /* Портфоліо */
 
